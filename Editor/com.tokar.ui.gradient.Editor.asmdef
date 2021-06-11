@@ -1,0 +1,17 @@
+{
+    "name": "com.tokar.ui.gradient.Editor",
+    "references": [
+        "GUID:5b8b2b8d9eaf8d444afcbb81802b6262"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

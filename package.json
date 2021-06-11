@@ -1,0 +1,24 @@
+{
+  "name": "com.tokar.ui.gradient",
+  "displayName": "Figma Gradient",
+  "description": "UI gradient component",
+  "version": "0.0.1-preview",
+  "keywords": [
+    "ui",
+    "image",
+    "gradient"
+  ],
+  "samples": [
+    {
+      "displayName": "Demo",
+      "description": "Description for sample 1",
+      "path": "Samples"
+    }
+  ],
+  "author": {
+    "name": "o_tokar",
+    "email": "#",
+    "url": "https://#"
+  },
+  "type": "tool"
+}
