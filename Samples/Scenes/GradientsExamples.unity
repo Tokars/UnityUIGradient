@@ -123,6 +123,38 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!21 &6163527
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RadialGradientShader
+  m_Shader: {fileID: 4800000, guid: 63de0033d21df034585262239a52daf1, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &15638360
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,10 +201,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 15638360}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d80d2465501f24ba4c947ae1f8a817, type: 3}
+  m_Script: {fileID: 11500000, guid: f7b010416f0b8d744a705bb588b388b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 679499385}
+  m_Material: {fileID: 979464252}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -183,16 +215,16 @@ MonoBehaviour:
   _Gradient:
     serializedVersion: 2
     key0: {r: 0.98823535, g: 0.7725491, b: 0.8078432, a: 1}
-    key1: {r: 0.4784314, g: 0.4039216, b: 0.94117653, a: 1}
-    key2: {r: 0.9058824, g: 0.13333334, b: 0.227451, a: 0}
+    key1: {r: 0.9686275, g: 0.17254902, b: 0.3803922, a: 1}
+    key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 37779
-    ctime2: 65535
+    ctime1: 65535
+    ctime2: 0
     ctime3: 0
     ctime4: 0
     ctime5: 0
@@ -207,11 +239,11 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 3
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
-  _Center: {x: 0.5, y: 0.5}
+  _Angle: 78
+  _Center: {x: 0.5, y: 0.8}
 --- !u!222 &15638363
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -220,6 +252,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 15638360}
   m_CullTransparentMesh: 0
+--- !u!21 &47496888
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/LinearGradientShader
+  m_Shader: {fileID: 4800000, guid: e88da90ad3eabef428133c17bf37b086, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &80565908
 GameObject:
   m_ObjectHideFlags: 0
@@ -266,10 +330,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 80565908}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6ab1426fd1fe8449d8f51179530cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cee4ad3248ebdd4489eab058e166981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 118522759}
+  m_Material: {fileID: 1814629476}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -307,7 +371,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
+  _Angle: 180
 --- !u!222 &80565911
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -316,47 +380,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 80565908}
   m_CullTransparentMesh: 0
---- !u!21 &107011743
+--- !u!21 &97512793
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/DiamondGradientShader
-  m_Shader: {fileID: 4800000, guid: 28eeb8da2515869408d6606ca21995a5, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!21 &118522759
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/LinearGradientShader
-  m_Shader: {fileID: 4800000, guid: c7393eefa72d298458e3e5b234c9cf48, type: 3}
+  m_Name: UI/AngularGradientShader
+  m_Shader: {fileID: 4800000, guid: be5c0cb54c2b78e4daf51754cbabfe87, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -426,10 +458,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 119953730}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29578933630697b42867238c21ed3bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: f8c85731ecf51aa4bb67ee01c46534e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1316907996}
+  m_Material: {fileID: 253791157}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -467,7 +499,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
+  _Angle: 180
   _Center: {x: 0.5, y: 0.5}
   _Radius1: 0.3
   _Radius2: 0.1
@@ -516,7 +548,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
---- !u!21 &184419265
+--- !u!21 &189945180
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -524,7 +556,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UI/DiamondGradientShader
-  m_Shader: {fileID: 4800000, guid: 28eeb8da2515869408d6606ca21995a5, type: 3}
+  m_Shader: {fileID: 4800000, guid: 73e8841348898754594c773946e3345c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -631,10 +663,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 216230523}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d80d2465501f24ba4c947ae1f8a817, type: 3}
+  m_Script: {fileID: 11500000, guid: f7b010416f0b8d744a705bb588b388b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1000240026}
+  m_Material: {fileID: 1685623835}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -644,9 +676,9 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.98823535, g: 0.7725491, b: 0.8078432, a: 1}
+    key0: {r: 0.9843138, g: 0.6862745, b: 0.7803922, a: 1}
     key1: {r: 0.8431373, g: 0.027450982, b: 0.37254903, a: 1}
-    key2: {r: 0.9058824, g: 0.13333334, b: 0.227451, a: 0}
+    key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -654,7 +686,7 @@ MonoBehaviour:
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
     ctime1: 65535
-    ctime2: 65535
+    ctime2: 0
     ctime3: 0
     ctime4: 0
     ctime5: 0
@@ -672,8 +704,8 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 45
-  _Center: {x: 0.17, y: 0.7}
+  _Angle: -20
+  _Center: {x: 0.5, y: 0.8}
 --- !u!222 &216230526
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -682,114 +714,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 216230523}
   m_CullTransparentMesh: 0
---- !u!1 &247073869
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 247073870}
-  - component: {fileID: 247073872}
-  - component: {fileID: 247073871}
-  m_Layer: 5
-  m_Name: radial_example (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &247073870
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247073869}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1010586009}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &247073871
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247073869}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29578933630697b42867238c21ed3bcf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 639372169}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  _Gradient:
-    serializedVersion: 2
-    key0: {r: 0.9960785, g: 0.8000001, b: 0.40000004, a: 1}
-    key1: {r: 0.9725491, g: 0.18823531, b: 0.38431376, a: 1}
-    key2: {r: 0.59607846, g: 0.20000002, b: 0.9921569, a: 0}
-    key3: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 65535
-    ctime3: 65535
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  _GradientResolution: 256
-  _Angle: 0
-  _Center: {x: 0.5, y: 1.2}
-  _Radius1: 1
-  _Radius2: 1
---- !u!222 &247073872
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 247073869}
-  m_CullTransparentMesh: 0
---- !u!21 &254409432
+--- !u!21 &253791157
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/DiamondGradientShader
-  m_Shader: {fileID: 4800000, guid: 28eeb8da2515869408d6606ca21995a5, type: 3}
+  m_Name: UI/RadialGradientShader
+  m_Shader: {fileID: 4800000, guid: 63de0033d21df034585262239a52daf1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -859,10 +792,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 260986154}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf6dcab95f1c454c86e858153b49d6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e89bc82625f11f479362b9138321ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 381142458}
+  m_Material: {fileID: 2060268075}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -872,8 +805,8 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.9960785, g: 0.7843138, b: 0.4039216, a: 1}
-    key1: {r: 0.9686275, g: 0.17254902, b: 0.3803922, a: 1}
+    key0: {r: 0.99607843, g: 0.78431374, b: 0.40392157, a: 1}
+    key1: {r: 0.96862745, g: 0.17254902, b: 0.38039216, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -912,38 +845,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 260986154}
   m_CullTransparentMesh: 0
---- !u!21 &266891067
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/LinearGradientShader
-  m_Shader: {fileID: 4800000, guid: c7393eefa72d298458e3e5b234c9cf48, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &273403927
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,7 +882,6 @@ RectTransform:
   - {fileID: 1891402858}
   - {fileID: 308424985}
   - {fileID: 1447445145}
-  - {fileID: 951065643}
   m_Father: {fileID: 1974055039}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1060,10 +960,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 295854767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29578933630697b42867238c21ed3bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: f8c85731ecf51aa4bb67ee01c46534e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1862852264}
+  m_Material: {fileID: 2108294879}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1073,8 +973,8 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.9960785, g: 0.7843138, b: 0.4039216, a: 1}
-    key1: {r: 0.9686275, g: 0.17254902, b: 0.3803922, a: 1}
+    key0: {r: 0.99607843, g: 0.78431374, b: 0.40392157, a: 1}
+    key1: {r: 0.96862745, g: 0.17254902, b: 0.38039216, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -1101,10 +1001,10 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
-  _Center: {x: 0.5, y: 0.5}
-  _Radius1: 0.35
-  _Radius2: 0.07
+  _Angle: 180
+  _Center: {x: 0.5, y: -0.1}
+  _Radius1: 2.31
+  _Radius2: 1.21
 --- !u!222 &295854770
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1159,10 +1059,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 308424984}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d80d2465501f24ba4c947ae1f8a817, type: 3}
+  m_Script: {fileID: 11500000, guid: f7b010416f0b8d744a705bb588b388b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 469229824}
+  m_Material: {fileID: 1127968118}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1172,10 +1072,10 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.90196085, g: 0.08235294, b: 0.5921569, a: 1}
-    key1: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 1}
-    key2: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 0}
-    key3: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 0}
+    key0: {r: 0.054901965, g: 0.6745098, b: 0.8235295, a: 1}
+    key1: {r: 0.59607846, g: 0.20000002, b: 0.9921569, a: 1}
+    key2: {r: 0.59607846, g: 0.20000002, b: 0.9921569, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
@@ -1183,7 +1083,7 @@ MonoBehaviour:
     ctime0: 0
     ctime1: 65535
     ctime2: 65535
-    ctime3: 65535
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -1200,8 +1100,8 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
-  _Center: {x: 0.5, y: 0.5}
+  _Angle: 20
+  _Center: {x: 0.3, y: 0.5}
 --- !u!222 &308424987
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1210,39 +1110,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 308424984}
   m_CullTransparentMesh: 0
---- !u!21 &326829215
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RadialGradientShader
-  m_Shader: {fileID: 4800000, guid: 716dede5cf74ba64987ba43a28b6008e, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!21 &381142458
+--- !u!21 &372318690
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -1250,71 +1118,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UI/DiamondGradientShader
-  m_Shader: {fileID: 4800000, guid: 28eeb8da2515869408d6606ca21995a5, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!21 &393620871
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/DiamondGradientShader
-  m_Shader: {fileID: 4800000, guid: 28eeb8da2515869408d6606ca21995a5, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!21 &393810414
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/AngularGradientShader
-  m_Shader: {fileID: 4800000, guid: a725f1a97e22e8342b92f441970dbe34, type: 3}
+  m_Shader: {fileID: 4800000, guid: 73e8841348898754594c773946e3345c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -1384,10 +1188,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 400226168}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29578933630697b42867238c21ed3bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: f8c85731ecf51aa4bb67ee01c46534e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1698555368}
+  m_Material: {fileID: 748264270}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1397,7 +1201,7 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.5372549, g: 0.8313726, b: 0.9607844, a: 1}
+    key0: {r: 0.5372549, g: 0.83137256, b: 0.9607843, a: 1}
     key1: {r: 0.09019608, g: 0.30588236, b: 0.67058825, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
@@ -1437,15 +1241,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 400226168}
   m_CullTransparentMesh: 0
---- !u!21 &413056480
+--- !u!21 &402499753
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/AngularGradientShader
-  m_Shader: {fileID: 4800000, guid: a725f1a97e22e8342b92f441970dbe34, type: 3}
+  m_Name: UI/LinearGradientShader
+  m_Shader: {fileID: 4800000, guid: e88da90ad3eabef428133c17bf37b086, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
+--- !u!21 &407726051
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RadialGradientShader
+  m_Shader: {fileID: 4800000, guid: 63de0033d21df034585262239a52daf1, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
+--- !u!21 &412182891
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RadialGradientShader
+  m_Shader: {fileID: 4800000, guid: 63de0033d21df034585262239a52daf1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -1515,10 +1383,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 424893121}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf6dcab95f1c454c86e858153b49d6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e89bc82625f11f479362b9138321ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 876596033}
+  m_Material: {fileID: 1561869151}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -1528,25 +1396,25 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.89019614, g: 0.7137255, b: 0.87843144, a: 1}
-    key1: {r: 0.4039216, g: 0.61960787, b: 0.7372549, a: 1}
-    key2: {r: 0.5529412, g: 0.16078432, b: 0.627451, a: 0}
-    key3: {r: 0.9058824, g: 0.13333334, b: 0.227451, a: 0}
+    key0: {r: 0.18431373, g: 0.19607845, b: 0.20784315, a: 1}
+    key1: {r: 0, g: 0.43921572, b: 0.7568628, a: 1}
+    key2: {r: 0.18431373, g: 0.19607845, b: 0.20784315, a: 1}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 32768
+    ctime1: 45875
     ctime2: 65535
-    ctime3: 65535
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
     ctime7: 0
     atime0: 0
     atime1: 65535
-    atime2: 0
+    atime2: 65535
     atime3: 0
     atime4: 0
     atime5: 0
@@ -1554,9 +1422,9 @@ MonoBehaviour:
     atime7: 0
     m_Mode: 0
     m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
+    m_NumAlphaKeys: 3
   _GradientResolution: 256
-  _Angle: 21.9
+  _Angle: 24
   _Center: {x: 0.25, y: 0.3}
   _Radius1: 0.5
   _Radius2: 0.5
@@ -1568,137 +1436,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 424893121}
   m_CullTransparentMesh: 0
---- !u!1 &442635528
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 442635529}
-  - component: {fileID: 442635531}
-  - component: {fileID: 442635530}
-  m_Layer: 5
-  m_Name: diamond_example (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &442635529
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442635528}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1820381341}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &442635530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442635528}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf6dcab95f1c454c86e858153b49d6c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 107011743}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  _Gradient:
-    serializedVersion: 2
-    key0: {r: 0.9960785, g: 0.8000001, b: 0.40000004, a: 1}
-    key1: {r: 0.9725491, g: 0.18823531, b: 0.38431376, a: 1}
-    key2: {r: 0.5411765, g: 0, b: 0.5686275, a: 0}
-    key3: {r: 0.9058824, g: 0.13333334, b: 0.227451, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 65535
-    ctime3: 65535
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  _GradientResolution: 256
-  _Angle: 45
-  _Center: {x: 0.5, y: 0.5}
-  _Radius1: 2
-  _Radius2: 2
---- !u!222 &442635531
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 442635528}
-  m_CullTransparentMesh: 0
---- !u!21 &469229824
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/AngularGradientShader
-  m_Shader: {fileID: 4800000, guid: a725f1a97e22e8342b92f441970dbe34, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &471544358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1736,7 +1473,6 @@ RectTransform:
   - {fileID: 1876086732}
   - {fileID: 1305885618}
   - {fileID: 2093188163}
-  - {fileID: 1010586009}
   m_Father: {fileID: 597574552}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1769,169 +1505,15 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!21 &477781575
+--- !u!21 &553695497
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/AngularGradientShader
-  m_Shader: {fileID: 4800000, guid: a725f1a97e22e8342b92f441970dbe34, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!1 &496384225
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 496384226}
-  - component: {fileID: 496384229}
-  - component: {fileID: 496384228}
-  - component: {fileID: 496384227}
-  m_Layer: 5
-  m_Name: mask
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &496384226
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496384225}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 575537234}
-  m_Father: {fileID: 727580964}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &496384227
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496384225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 1
---- !u!114 &496384228
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496384225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dfbd5c6b499fd06499c14df7a15ef800, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 1
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &496384229
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 496384225}
-  m_CullTransparentMesh: 0
---- !u!21 &539066760
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RadialGradientShader
-  m_Shader: {fileID: 4800000, guid: 716dede5cf74ba64987ba43a28b6008e, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!21 &560658530
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/DiamondGradientShader
-  m_Shader: {fileID: 4800000, guid: 28eeb8da2515869408d6606ca21995a5, type: 3}
+  m_Name: UI/LinearGradientShader
+  m_Shader: {fileID: 4800000, guid: e88da90ad3eabef428133c17bf37b086, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2001,10 +1583,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 568204674}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29578933630697b42867238c21ed3bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: f8c85731ecf51aa4bb67ee01c46534e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 659972670}
+  m_Material: {fileID: 407726051}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2054,102 +1636,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 568204674}
   m_CullTransparentMesh: 0
---- !u!1 &575537233
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+--- !u!21 &582140897
+Material:
   serializedVersion: 6
-  m_Component:
-  - component: {fileID: 575537234}
-  - component: {fileID: 575537236}
-  - component: {fileID: 575537235}
-  m_Layer: 5
-  m_Name: linear_example (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &575537234
-RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575537233}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 496384226}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &575537235
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575537233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6ab1426fd1fe8449d8f51179530cb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 1997791632}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  _Gradient:
-    serializedVersion: 2
-    key0: {r: 0.99607843, g: 0.8, b: 0.4, a: 1}
-    key1: {r: 0.972549, g: 0.1882353, b: 0.38431373, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 65535
-    ctime2: 0
-    ctime3: 0
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
-  _GradientResolution: 256
-  _Angle: 0
---- !u!222 &575537236
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 575537233}
-  m_CullTransparentMesh: 0
+  m_Name: UI/RadialGradientShader
+  m_Shader: {fileID: 4800000, guid: 63de0033d21df034585262239a52daf1, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &584863515
 GameObject:
   m_ObjectHideFlags: 0
@@ -2196,10 +1714,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 584863515}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6ab1426fd1fe8449d8f51179530cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cee4ad3248ebdd4489eab058e166981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1425401251}
+  m_Material: {fileID: 402499753}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2209,8 +1727,8 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.99607843, g: 0.8, b: 0.4, a: 1}
-    key1: {r: 0.972549, g: 0.1882353, b: 0.38431373, a: 1}
+    key0: {r: 0.25490198, g: 0.050980393, b: 0.4, a: 1}
+    key1: {r: 0.5411765, g: 0, b: 0.5686275, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -2237,7 +1755,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
+  _Angle: 180
 --- !u!222 &584863518
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2283,102 +1801,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
---- !u!21 &639372169
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RadialGradientShader
-  m_Shader: {fileID: 4800000, guid: 716dede5cf74ba64987ba43a28b6008e, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!21 &657739096
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/AngularGradientShader
-  m_Shader: {fileID: 4800000, guid: a725f1a97e22e8342b92f441970dbe34, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!21 &659972670
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RadialGradientShader
-  m_Shader: {fileID: 4800000, guid: 716dede5cf74ba64987ba43a28b6008e, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &674137539
 GameObject:
   m_ObjectHideFlags: 0
@@ -2425,10 +1847,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 674137539}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf6dcab95f1c454c86e858153b49d6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e89bc82625f11f479362b9138321ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 560658530}
+  m_Material: {fileID: 372318690}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2478,7 +1900,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 674137539}
   m_CullTransparentMesh: 0
---- !u!21 &679499385
+--- !u!21 &691714112
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -2486,7 +1908,71 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UI/AngularGradientShader
-  m_Shader: {fileID: 4800000, guid: a725f1a97e22e8342b92f441970dbe34, type: 3}
+  m_Shader: {fileID: 4800000, guid: be5c0cb54c2b78e4daf51754cbabfe87, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
+--- !u!21 &704406755
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/LinearGradientShader
+  m_Shader: {fileID: 4800000, guid: e88da90ad3eabef428133c17bf37b086, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
+--- !u!21 &717624284
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RadialGradientShader
+  m_Shader: {fileID: 4800000, guid: 63de0033d21df034585262239a52daf1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2556,10 +2042,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 718378207}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6ab1426fd1fe8449d8f51179530cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cee4ad3248ebdd4489eab058e166981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1179850194}
+  m_Material: {fileID: 704406755}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2597,7 +2083,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
+  _Angle: 180
 --- !u!222 &718378210
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2643,7 +2129,6 @@ RectTransform:
   - {fileID: 584863516}
   - {fileID: 902853422}
   - {fileID: 1661898546}
-  - {fileID: 496384226}
   m_Father: {fileID: 165293623}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2676,15 +2161,15 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!21 &801967469
+--- !u!21 &748264270
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/DiamondGradientShader
-  m_Shader: {fileID: 4800000, guid: 28eeb8da2515869408d6606ca21995a5, type: 3}
+  m_Name: UI/RadialGradientShader
+  m_Shader: {fileID: 4800000, guid: 63de0033d21df034585262239a52daf1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -2754,10 +2239,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 830678855}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf6dcab95f1c454c86e858153b49d6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e89bc82625f11f479362b9138321ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 995505484}
+  m_Material: {fileID: 1581010922}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -2807,6 +2292,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 830678855}
   m_CullTransparentMesh: 0
+--- !u!21 &838324121
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/LinearGradientShader
+  m_Shader: {fileID: 4800000, guid: e88da90ad3eabef428133c17bf37b086, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &874874867
 GameObject:
   m_ObjectHideFlags: 0
@@ -2941,70 +2458,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874874867}
   m_CullTransparentMesh: 0
---- !u!21 &876311148
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/LinearGradientShader
-  m_Shader: {fileID: 4800000, guid: c7393eefa72d298458e3e5b234c9cf48, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!21 &876596033
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/DiamondGradientShader
-  m_Shader: {fileID: 4800000, guid: 28eeb8da2515869408d6606ca21995a5, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &885285134
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,10 +2504,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 885285134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf6dcab95f1c454c86e858153b49d6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e89bc82625f11f479362b9138321ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 393620871}
+  m_Material: {fileID: 1683342209}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3064,10 +2517,10 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.90196085, g: 0.08235294, b: 0.5921569, a: 1}
-    key1: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 1}
-    key2: {r: 0.5411765, g: 0, b: 0.5686275, a: 0}
-    key3: {r: 0.9058824, g: 0.13333334, b: 0.227451, a: 0}
+    key0: {r: 0.054901965, g: 0.6745098, b: 0.8235295, a: 1}
+    key1: {r: 0.59607846, g: 0.20000002, b: 0.9921569, a: 1}
+    key2: {r: 0.59607846, g: 0.20000002, b: 0.9921569, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
@@ -3075,7 +2528,7 @@ MonoBehaviour:
     ctime0: 0
     ctime1: 65535
     ctime2: 65535
-    ctime3: 65535
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -3092,7 +2545,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: -16.3
+  _Angle: 180
   _Center: {x: 0.6, y: 0.7}
   _Radius1: 2
   _Radius2: 0.3
@@ -3150,10 +2603,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 902853421}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6ab1426fd1fe8449d8f51179530cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cee4ad3248ebdd4489eab058e166981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1589734798}
+  m_Material: {fileID: 838324121}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3163,8 +2616,8 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.9019608, g: 0.08235294, b: 0.5921569, a: 1}
-    key1: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 1}
+    key0: {r: 0.25490198, g: 0.050980393, b: 0.4, a: 1}
+    key1: {r: 0.5411765, g: 0, b: 0.5686275, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -3190,7 +2643,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
-  _GradientResolution: 16
+  _GradientResolution: 256
   _Angle: 0
 --- !u!222 &902853424
 CanvasRenderer:
@@ -3200,129 +2653,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 902853421}
   m_CullTransparentMesh: 0
---- !u!1 &951065642
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 951065643}
-  - component: {fileID: 951065646}
-  - component: {fileID: 951065645}
-  - component: {fileID: 951065644}
-  m_Layer: 5
-  m_Name: mask
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &951065643
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951065642}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1637192614}
-  m_Father: {fileID: 273403928}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &951065644
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951065642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 1
---- !u!114 &951065645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951065642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dfbd5c6b499fd06499c14df7a15ef800, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 1
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &951065646
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 951065642}
-  m_CullTransparentMesh: 0
---- !u!21 &995505484
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/DiamondGradientShader
-  m_Shader: {fileID: 4800000, guid: 28eeb8da2515869408d6606ca21995a5, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!21 &995842344
+--- !u!21 &950510644
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -3330,7 +2661,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UI/AngularGradientShader
-  m_Shader: {fileID: 4800000, guid: a725f1a97e22e8342b92f441970dbe34, type: 3}
+  m_Shader: {fileID: 4800000, guid: be5c0cb54c2b78e4daf51754cbabfe87, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -3354,7 +2685,7 @@ Material:
     - _StencilWriteMask: 255
     m_Colors: []
   m_BuildTextureStacks: []
---- !u!21 &1000240026
+--- !u!21 &979464252
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -3362,7 +2693,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: UI/AngularGradientShader
-  m_Shader: {fileID: 4800000, guid: a725f1a97e22e8342b92f441970dbe34, type: 3}
+  m_Shader: {fileID: 4800000, guid: be5c0cb54c2b78e4daf51754cbabfe87, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -3386,96 +2717,38 @@ Material:
     - _StencilWriteMask: 255
     m_Colors: []
   m_BuildTextureStacks: []
---- !u!1 &1010586008
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+--- !u!21 &1027778033
+Material:
   serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1010586009}
-  - component: {fileID: 1010586012}
-  - component: {fileID: 1010586011}
-  - component: {fileID: 1010586010}
-  m_Layer: 5
-  m_Name: mask
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1010586009
-RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010586008}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 247073870}
-  m_Father: {fileID: 471544359}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1010586010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010586008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 1
---- !u!114 &1010586011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010586008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dfbd5c6b499fd06499c14df7a15ef800, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 1
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1010586012
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1010586008}
-  m_CullTransparentMesh: 0
+  m_Name: UI/LinearGradientShader
+  m_Shader: {fileID: 4800000, guid: e88da90ad3eabef428133c17bf37b086, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &1029602973
 GameObject:
   m_ObjectHideFlags: 0
@@ -3610,6 +2883,70 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029602973}
   m_CullTransparentMesh: 0
+--- !u!21 &1038313339
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/DiamondGradientShader
+  m_Shader: {fileID: 4800000, guid: 73e8841348898754594c773946e3345c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
+--- !u!21 &1043213935
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/AngularGradientShader
+  m_Shader: {fileID: 4800000, guid: be5c0cb54c2b78e4daf51754cbabfe87, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &1058540326
 GameObject:
   m_ObjectHideFlags: 0
@@ -3656,10 +2993,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1058540326}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d80d2465501f24ba4c947ae1f8a817, type: 3}
+  m_Script: {fileID: 11500000, guid: f7b010416f0b8d744a705bb588b388b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 477781575}
+  m_Material: {fileID: 1043213935}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -3669,18 +3006,18 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.18431373, g: 0.19607845, b: 0.20784315, a: 1}
-    key1: {r: 0, g: 0.43921572, b: 0.7568628, a: 1}
-    key2: {r: 0.18431373, g: 0.19607845, b: 0.20784315, a: 1}
-    key3: {r: 0, g: 0, b: 0, a: 0}
+    key0: {r: 0.52156866, g: 0.003921569, b: 0.5568628, a: 1}
+    key1: {r: 0.75294125, g: 0.72156864, b: 0.43529415, a: 1}
+    key2: {r: 0.2627451, g: 0.050980397, b: 0.4039216, a: 1}
+    key3: {r: 0.52156866, g: 0.003921569, b: 0.5568628, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 45875
-    ctime2: 65535
-    ctime3: 0
+    ctime1: 33153
+    ctime2: 52235
+    ctime3: 65535
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -3694,11 +3031,11 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 3
+    m_NumColorKeys: 4
     m_NumAlphaKeys: 3
   _GradientResolution: 256
-  _Angle: 0
-  _Center: {x: 0.5, y: 0.5}
+  _Angle: -20
+  _Center: {x: 0.3, y: 0.5}
 --- !u!222 &1058540329
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3941,15 +3278,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!21 &1100790735
+--- !u!21 &1127968118
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RadialGradientShader
-  m_Shader: {fileID: 4800000, guid: 716dede5cf74ba64987ba43a28b6008e, type: 3}
+  m_Name: UI/AngularGradientShader
+  m_Shader: {fileID: 4800000, guid: be5c0cb54c2b78e4daf51754cbabfe87, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -4010,7 +3347,6 @@ RectTransform:
   - {fileID: 1903935682}
   - {fileID: 885285135}
   - {fileID: 1775907040}
-  - {fileID: 1820381341}
   m_Father: {fileID: 204547074}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4043,79 +3379,15 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
---- !u!21 &1179850194
+--- !u!21 &1202960579
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/LinearGradientShader
-  m_Shader: {fileID: 4800000, guid: c7393eefa72d298458e3e5b234c9cf48, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!21 &1198968971
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/AngularGradientShader
-  m_Shader: {fileID: 4800000, guid: a725f1a97e22e8342b92f441970dbe34, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!21 &1244046395
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/LinearGradientShader
-  m_Shader: {fileID: 4800000, guid: c7393eefa72d298458e3e5b234c9cf48, type: 3}
+  m_Name: UI/DiamondGradientShader
+  m_Shader: {fileID: 4800000, guid: 73e8841348898754594c773946e3345c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -4185,10 +3457,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1258682770}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6ab1426fd1fe8449d8f51179530cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cee4ad3248ebdd4489eab058e166981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 266891067}
+  m_Material: {fileID: 2047349167}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4417,10 +3689,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1300902725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29578933630697b42867238c21ed3bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: f8c85731ecf51aa4bb67ee01c46534e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 539066760}
+  m_Material: {fileID: 6163527}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4458,7 +3730,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
+  _Angle: 180
   _Center: {x: 0.7, y: 0.7}
   _Radius1: 1
   _Radius2: 1
@@ -4516,10 +3788,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1305885617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29578933630697b42867238c21ed3bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: f8c85731ecf51aa4bb67ee01c46534e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1854696174}
+  m_Material: {fileID: 582140897}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4557,7 +3829,7 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
+  _Angle: 180
   _Center: {x: 0.5, y: 0.7}
   _Radius1: 0.5
   _Radius2: 0.5
@@ -4615,10 +3887,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308009293}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf6dcab95f1c454c86e858153b49d6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e89bc82625f11f479362b9138321ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 184419265}
+  m_Material: {fileID: 1202960579}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4628,17 +3900,17 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.5372549, g: 0.8313726, b: 0.9607844, a: 1}
-    key1: {r: 0.09019608, g: 0.30588236, b: 0.67058825, a: 1}
-    key2: {r: 0.5529412, g: 0.16078432, b: 0.627451, a: 0}
-    key3: {r: 0.9058824, g: 0.13333334, b: 0.227451, a: 0}
+    key0: {r: 0.52156866, g: 0.003921569, b: 0.5568628, a: 1}
+    key1: {r: 0.75294125, g: 0.72156864, b: 0.43529415, a: 1}
+    key2: {r: 0.2627451, g: 0.050980397, b: 0.4039216, a: 1}
+    key3: {r: 0.52156866, g: 0.003921569, b: 0.5568628, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 65535
-    ctime2: 65535
+    ctime1: 33153
+    ctime2: 52235
     ctime3: 65535
     ctime4: 0
     ctime5: 0
@@ -4646,15 +3918,15 @@ MonoBehaviour:
     ctime7: 0
     atime0: 0
     atime1: 65535
-    atime2: 0
+    atime2: 65535
     atime3: 0
     atime4: 0
     atime5: 0
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 2
-    m_NumAlphaKeys: 2
+    m_NumColorKeys: 4
+    m_NumAlphaKeys: 3
   _GradientResolution: 256
   _Angle: -45
   _Center: {x: 1, y: 1}
@@ -4668,38 +3940,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1308009293}
   m_CullTransparentMesh: 0
---- !u!21 &1316907996
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RadialGradientShader
-  m_Shader: {fileID: 4800000, guid: 716dede5cf74ba64987ba43a28b6008e, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &1326313755
 GameObject:
   m_ObjectHideFlags: 0
@@ -4746,10 +3986,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1326313755}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6ab1426fd1fe8449d8f51179530cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cee4ad3248ebdd4489eab058e166981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 876311148}
+  m_Material: {fileID: 1794104305}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4842,10 +4082,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1349959234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d80d2465501f24ba4c947ae1f8a817, type: 3}
+  m_Script: {fileID: 11500000, guid: f7b010416f0b8d744a705bb588b388b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1198968971}
+  m_Material: {fileID: 950510644}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4855,16 +4095,16 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.89019614, g: 0.7137255, b: 0.87843144, a: 1}
-    key1: {r: 0.75294125, g: 0.72156864, b: 0.43529415, a: 1}
-    key2: {r: 0.5529412, g: 0.16078432, b: 0.627451, a: 0}
+    key0: {r: 0.18431373, g: 0.19607845, b: 0.20784315, a: 1}
+    key1: {r: 0, g: 0.43921572, b: 0.7568628, a: 1}
+    key2: {r: 0.18431373, g: 0.19607845, b: 0.20784315, a: 1}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 33153
+    ctime1: 45875
     ctime2: 65535
     ctime3: 0
     ctime4: 0
@@ -4873,7 +4113,7 @@ MonoBehaviour:
     ctime7: 0
     atime0: 0
     atime1: 65535
-    atime2: 0
+    atime2: 65535
     atime3: 0
     atime4: 0
     atime5: 0
@@ -4881,10 +4121,10 @@ MonoBehaviour:
     atime7: 0
     m_Mode: 0
     m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
+    m_NumAlphaKeys: 3
   _GradientResolution: 256
-  _Angle: -20
-  _Center: {x: 0.3, y: 0.5}
+  _Angle: 0
+  _Center: {x: 0.5, y: 0.5}
 --- !u!222 &1349959237
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4893,38 +4133,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1349959234}
   m_CullTransparentMesh: 0
---- !u!21 &1362834157
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/AngularGradientShader
-  m_Shader: {fileID: 4800000, guid: a725f1a97e22e8342b92f441970dbe34, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &1402005324
 GameObject:
   m_ObjectHideFlags: 0
@@ -4971,10 +4179,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1402005324}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6ab1426fd1fe8449d8f51179530cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cee4ad3248ebdd4489eab058e166981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1458434992}
+  m_Material: {fileID: 47496888}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4984,8 +4192,8 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.9843137, g: 0.6862745, b: 0.78039217, a: 1}
-    key1: {r: 0.84313726, g: 0.02745098, b: 0.37254903, a: 1}
+    key0: {r: 0.9882353, g: 0.77254903, b: 0.80784315, a: 1}
+    key1: {r: 0.90588236, g: 0.13333334, b: 0.22745098, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -5021,70 +4229,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1402005324}
   m_CullTransparentMesh: 0
---- !u!21 &1423501861
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/LinearGradientShader
-  m_Shader: {fileID: 4800000, guid: c7393eefa72d298458e3e5b234c9cf48, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
---- !u!21 &1425401251
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/LinearGradientShader
-  m_Shader: {fileID: 4800000, guid: c7393eefa72d298458e3e5b234c9cf48, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &1430559092
 GameObject:
   m_ObjectHideFlags: 0
@@ -5195,10 +4339,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1447445144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d80d2465501f24ba4c947ae1f8a817, type: 3}
+  m_Script: {fileID: 11500000, guid: f7b010416f0b8d744a705bb588b388b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 657739096}
+  m_Material: {fileID: 97512793}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5209,17 +4353,17 @@ MonoBehaviour:
   _Gradient:
     serializedVersion: 2
     key0: {r: 0.054901965, g: 0.6745098, b: 0.8235295, a: 1}
-    key1: {r: 0.59607846, g: 0.20000002, b: 0.9921569, a: 1}
+    key1: {r: 0.9058824, g: 0.32156864, b: 0.5294118, a: 1}
     key2: {r: 0.59607846, g: 0.20000002, b: 0.9921569, a: 0}
-    key3: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 65535
+    ctime1: 32768
     ctime2: 65535
-    ctime3: 0
+    ctime3: 65535
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -5233,11 +4377,11 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 2
+    m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 20
-  _Center: {x: 0.3, y: 0.5}
+  _Angle: 180
+  _Center: {x: 0, y: 0}
 --- !u!222 &1447445147
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5246,38 +4390,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1447445144}
   m_CullTransparentMesh: 0
---- !u!21 &1458434992
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/LinearGradientShader
-  m_Shader: {fileID: 4800000, guid: c7393eefa72d298458e3e5b234c9cf48, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &1495143316
 GameObject:
   m_ObjectHideFlags: 0
@@ -5324,10 +4436,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1495143316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29578933630697b42867238c21ed3bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: f8c85731ecf51aa4bb67ee01c46534e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1978980499}
+  m_Material: {fileID: 1886326103}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5337,7 +4449,7 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.89019614, g: 0.7137255, b: 0.87843144, a: 1}
+    key0: {r: 0.8901961, g: 0.7137255, b: 0.8784314, a: 1}
     key1: {r: 0.5529412, g: 0.16078432, b: 0.627451, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
@@ -5365,8 +4477,8 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
-  _Center: {x: 0.5, y: 0.5}
+  _Angle: 180
+  _Center: {x: 0, y: 0}
   _Radius1: 1
   _Radius2: 1
 --- !u!222 &1495143319
@@ -5377,15 +4489,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495143316}
   m_CullTransparentMesh: 0
---- !u!21 &1589734798
+--- !u!21 &1561869151
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/LinearGradientShader
-  m_Shader: {fileID: 4800000, guid: c7393eefa72d298458e3e5b234c9cf48, type: 3}
+  m_Name: UI/DiamondGradientShader
+  m_Shader: {fileID: 4800000, guid: 73e8841348898754594c773946e3345c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
+--- !u!21 &1580507766
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/DiamondGradientShader
+  m_Shader: {fileID: 4800000, guid: 73e8841348898754594c773946e3345c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
+--- !u!21 &1581010922
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/DiamondGradientShader
+  m_Shader: {fileID: 4800000, guid: 73e8841348898754594c773946e3345c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -5521,10 +4697,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1602318616}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d80d2465501f24ba4c947ae1f8a817, type: 3}
+  m_Script: {fileID: 11500000, guid: f7b010416f0b8d744a705bb588b388b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 995842344}
+  m_Material: {fileID: 2095741963}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5562,8 +4738,8 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
-  _Center: {x: 0.5, y: 0.5}
+  _Angle: 180
+  _Center: {x: 0.5, y: 0}
 --- !u!222 &1602318619
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5571,103 +4747,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1602318616}
-  m_CullTransparentMesh: 0
---- !u!1 &1637192613
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1637192614}
-  - component: {fileID: 1637192616}
-  - component: {fileID: 1637192615}
-  m_Layer: 5
-  m_Name: angular_example (9)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1637192614
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637192613}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 951065643}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 150, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1637192615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637192613}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d80d2465501f24ba4c947ae1f8a817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 413056480}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  _Gradient:
-    serializedVersion: 2
-    key0: {r: 0.9960785, g: 0.8000001, b: 0.40000004, a: 1}
-    key1: {r: 0.9725491, g: 0.18823531, b: 0.38431376, a: 1}
-    key2: {r: 0.20392159, g: 0.9725491, b: 0.18823531, a: 0}
-    key3: {r: 0.20392159, g: 0.9725491, b: 0.18823531, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
-    key5: {r: 0, g: 0, b: 0, a: 0}
-    key6: {r: 0, g: 0, b: 0, a: 0}
-    key7: {r: 0, g: 0, b: 0, a: 0}
-    ctime0: 0
-    ctime1: 49922
-    ctime2: 65535
-    ctime3: 65535
-    ctime4: 0
-    ctime5: 0
-    ctime6: 0
-    ctime7: 0
-    atime0: 0
-    atime1: 65535
-    atime2: 0
-    atime3: 0
-    atime4: 0
-    atime5: 0
-    atime6: 0
-    atime7: 0
-    m_Mode: 0
-    m_NumColorKeys: 3
-    m_NumAlphaKeys: 2
-  _GradientResolution: 256
-  _Angle: 0
-  _Center: {x: 0.5, y: 0.5}
---- !u!222 &1637192616
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1637192613}
   m_CullTransparentMesh: 0
 --- !u!1 &1653451504
 GameObject:
@@ -5717,10 +4796,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1653451504}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6ab1426fd1fe8449d8f51179530cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cee4ad3248ebdd4489eab058e166981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2126329645}
+  m_Material: {fileID: 1870616747}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5730,17 +4809,17 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.48128346, g: 0.27450982, b: 0.54901963, a: 1}
-    key1: {r: 1, g: 0.5, b: 0.70000005, a: 1}
-    key2: {r: 0, g: 0, b: 0, a: 0}
+    key0: {r: 0.6792453, g: 0.33641866, b: 0.6356707, a: 1}
+    key1: {r: 0.735849, g: 0.735849, b: 0.735849, a: 1}
+    key2: {r: 0.20754719, g: 0.20754719, b: 0.20754719, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 65535
-    ctime2: 0
+    ctime1: 55127
+    ctime2: 55127
     ctime3: 0
     ctime4: 0
     ctime5: 0
@@ -5758,7 +4837,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 180
+  _Angle: 0
 --- !u!222 &1653451507
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5813,10 +4892,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1661898545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6ab1426fd1fe8449d8f51179530cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cee4ad3248ebdd4489eab058e166981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1423501861}
+  m_Material: {fileID: 553695497}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5863,15 +4942,79 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661898545}
   m_CullTransparentMesh: 0
---- !u!21 &1698555368
+--- !u!21 &1683342209
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RadialGradientShader
-  m_Shader: {fileID: 4800000, guid: 716dede5cf74ba64987ba43a28b6008e, type: 3}
+  m_Name: UI/DiamondGradientShader
+  m_Shader: {fileID: 4800000, guid: 73e8841348898754594c773946e3345c, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
+--- !u!21 &1685623835
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/AngularGradientShader
+  m_Shader: {fileID: 4800000, guid: be5c0cb54c2b78e4daf51754cbabfe87, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
+--- !u!21 &1700671790
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/AngularGradientShader
+  m_Shader: {fileID: 4800000, guid: be5c0cb54c2b78e4daf51754cbabfe87, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -5941,10 +5084,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1764617545}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d80d2465501f24ba4c947ae1f8a817, type: 3}
+  m_Script: {fileID: 11500000, guid: f7b010416f0b8d744a705bb588b388b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1362834157}
+  m_Material: {fileID: 1700671790}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -5954,8 +5097,8 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.9960785, g: 0.7843138, b: 0.4039216, a: 1}
-    key1: {r: 0.9686275, g: 0.17254902, b: 0.3803922, a: 1}
+    key0: {r: 0.99607843, g: 0.78431374, b: 0.40392157, a: 1}
+    key1: {r: 0.96862745, g: 0.17254902, b: 0.38039216, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -5982,7 +5125,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 110
+  _Angle: 180
   _Center: {x: 0.5, y: 0.5}
 --- !u!222 &1764617548
 CanvasRenderer:
@@ -6038,10 +5181,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1775907039}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf6dcab95f1c454c86e858153b49d6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e89bc82625f11f479362b9138321ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 254409432}
+  m_Material: {fileID: 1580507766}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6052,15 +5195,15 @@ MonoBehaviour:
   _Gradient:
     serializedVersion: 2
     key0: {r: 0.054901965, g: 0.6745098, b: 0.8235295, a: 1}
-    key1: {r: 0.59607846, g: 0.20000002, b: 0.9921569, a: 1}
-    key2: {r: 0.5411765, g: 0, b: 0.5686275, a: 0}
-    key3: {r: 0.9058824, g: 0.13333334, b: 0.227451, a: 0}
+    key1: {r: 0.9058824, g: 0.32156864, b: 0.5294118, a: 1}
+    key2: {r: 0.59607846, g: 0.20000002, b: 0.9921569, a: 0}
+    key3: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 65535
+    ctime1: 32768
     ctime2: 65535
     ctime3: 65535
     ctime4: 0
@@ -6076,10 +5219,10 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 2
+    m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
+  _Angle: 180
   _Center: {x: 0.8, y: 1}
   _Radius1: 3
   _Radius2: 3
@@ -6091,6 +5234,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1775907039}
   m_CullTransparentMesh: 0
+--- !u!21 &1794104305
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/LinearGradientShader
+  m_Shader: {fileID: 4800000, guid: e88da90ad3eabef428133c17bf37b086, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &1795471035
 GameObject:
   m_ObjectHideFlags: 0
@@ -6227,105 +5402,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1795471035}
   m_CullTransparentMesh: 0
---- !u!1 &1820381340
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1820381341}
-  - component: {fileID: 1820381344}
-  - component: {fileID: 1820381343}
-  - component: {fileID: 1820381342}
-  m_Layer: 5
-  m_Name: mask
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1820381341
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820381340}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 442635529}
-  m_Father: {fileID: 1177468317}
-  m_RootOrder: 9
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1820381342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820381340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_ShowMaskGraphic: 1
---- !u!114 &1820381343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820381340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dfbd5c6b499fd06499c14df7a15ef800, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 1
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1820381344
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1820381340}
-  m_CullTransparentMesh: 0
---- !u!21 &1854696174
+--- !u!21 &1814629476
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RadialGradientShader
-  m_Shader: {fileID: 4800000, guid: 716dede5cf74ba64987ba43a28b6008e, type: 3}
+  m_Name: UI/LinearGradientShader
+  m_Shader: {fileID: 4800000, guid: e88da90ad3eabef428133c17bf37b086, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -6349,15 +5434,15 @@ Material:
     - _StencilWriteMask: 255
     m_Colors: []
   m_BuildTextureStacks: []
---- !u!21 &1862852264
+--- !u!21 &1870616747
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RadialGradientShader
-  m_Shader: {fileID: 4800000, guid: 716dede5cf74ba64987ba43a28b6008e, type: 3}
+  m_Name: UI/LinearGradientShader
+  m_Shader: {fileID: 4800000, guid: e88da90ad3eabef428133c17bf37b086, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -6427,10 +5512,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1876086731}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29578933630697b42867238c21ed3bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: f8c85731ecf51aa4bb67ee01c46534e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 326829215}
+  m_Material: {fileID: 717624284}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6440,7 +5525,7 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.25490198, g: 0.050980397, b: 0.40000004, a: 1}
+    key0: {r: 0.25490198, g: 0.050980393, b: 0.4, a: 1}
     key1: {r: 0.5411765, g: 0, b: 0.5686275, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
@@ -6468,7 +5553,7 @@ MonoBehaviour:
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 0
+  _Angle: 180
   _Center: {x: 0.5, y: 0.5}
   _Radius1: 0.06
   _Radius2: 0.06
@@ -6480,6 +5565,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1876086731}
   m_CullTransparentMesh: 0
+--- !u!21 &1886326103
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/RadialGradientShader
+  m_Shader: {fileID: 4800000, guid: 63de0033d21df034585262239a52daf1, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &1891402857
 GameObject:
   m_ObjectHideFlags: 0
@@ -6526,10 +5643,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1891402857}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32d80d2465501f24ba4c947ae1f8a817, type: 3}
+  m_Script: {fileID: 11500000, guid: f7b010416f0b8d744a705bb588b388b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 393810414}
+  m_Material: {fileID: 691714112}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6539,17 +5656,17 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.52156866, g: 0.003921569, b: 0.5568628, a: 1}
-    key1: {r: 0.75294125, g: 0.72156864, b: 0.43529415, a: 1}
-    key2: {r: 0.2627451, g: 0.050980397, b: 0.4039216, a: 1}
-    key3: {r: 0.52156866, g: 0.003921569, b: 0.5568628, a: 0}
+    key0: {r: 0.90196085, g: 0.08235294, b: 0.5921569, a: 1}
+    key1: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 1}
+    key2: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 0}
+    key3: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 33153
-    ctime2: 52235
+    ctime1: 65535
+    ctime2: 65535
     ctime3: 65535
     ctime4: 0
     ctime5: 0
@@ -6557,18 +5674,18 @@ MonoBehaviour:
     ctime7: 0
     atime0: 0
     atime1: 65535
-    atime2: 65535
+    atime2: 0
     atime3: 0
     atime4: 0
     atime5: 0
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 4
-    m_NumAlphaKeys: 3
+    m_NumColorKeys: 2
+    m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: -20
-  _Center: {x: 0.3, y: 0.5}
+  _Angle: 0
+  _Center: {x: 0.5, y: 0.5}
 --- !u!222 &1891402860
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6623,10 +5740,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1903935681}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf6dcab95f1c454c86e858153b49d6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e89bc82625f11f479362b9138321ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 801967469}
+  m_Material: {fileID: 1038313339}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6636,16 +5753,16 @@ MonoBehaviour:
       m_Calls: []
   _Gradient:
     serializedVersion: 2
-    key0: {r: 0.25490198, g: 0.050980397, b: 0.40000004, a: 1}
-    key1: {r: 0.97647065, g: 0, b: 0, a: 1}
-    key2: {r: 0.5411765, g: 0, b: 0.5686275, a: 0}
-    key3: {r: 0.9058824, g: 0.13333334, b: 0.227451, a: 0}
+    key0: {r: 0.90196085, g: 0.08235294, b: 0.5921569, a: 1}
+    key1: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 1}
+    key2: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 0}
+    key3: {r: 0.3019608, g: 0.25882354, b: 0.5921569, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 35466
+    ctime1: 65535
     ctime2: 65535
     ctime3: 65535
     ctime4: 0
@@ -6661,7 +5778,7 @@ MonoBehaviour:
     atime6: 0
     atime7: 0
     m_Mode: 0
-    m_NumColorKeys: 3
+    m_NumColorKeys: 2
     m_NumAlphaKeys: 2
   _GradientResolution: 256
   _Angle: -40
@@ -6676,38 +5793,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903935681}
   m_CullTransparentMesh: 0
---- !u!21 &1922431623
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/DiamondGradientShader
-  m_Shader: {fileID: 4800000, guid: 28eeb8da2515869408d6606ca21995a5, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _ColorMask: 15
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors: []
-  m_BuildTextureStacks: []
 --- !u!1 &1962972686
 GameObject:
   m_ObjectHideFlags: 0
@@ -6754,10 +5839,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1962972686}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf6dcab95f1c454c86e858153b49d6c, type: 3}
+  m_Script: {fileID: 11500000, guid: 0e89bc82625f11f479362b9138321ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1922431623}
+  m_Material: {fileID: 189945180}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -6769,16 +5854,16 @@ MonoBehaviour:
     serializedVersion: 2
     key0: {r: 0.9843138, g: 0.6862745, b: 0.7803922, a: 1}
     key1: {r: 0.8431373, g: 0.027450982, b: 0.37254903, a: 1}
-    key2: {r: 0.9058824, g: 0.13333334, b: 0.227451, a: 0}
-    key3: {r: 0.9058824, g: 0.13333334, b: 0.227451, a: 0}
+    key2: {r: 0, g: 0, b: 0, a: 0}
+    key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
     ctime1: 65535
-    ctime2: 65535
-    ctime3: 65535
+    ctime2: 0
+    ctime3: 0
     ctime4: 0
     ctime5: 0
     ctime6: 0
@@ -6796,7 +5881,7 @@ MonoBehaviour:
     m_NumAlphaKeys: 2
   _GradientResolution: 256
   _Angle: -45
-  _Center: {x: 0.5, y: 0.5}
+  _Center: {x: 0.25, y: 0.3}
   _Radius1: 2
   _Radius2: 1
 --- !u!222 &1962972689
@@ -6818,6 +5903,7 @@ GameObject:
   - component: {fileID: 1970458512}
   - component: {fileID: 1970458511}
   - component: {fileID: 1970458510}
+  - component: {fileID: 1970458513}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -6890,6 +5976,38 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1970458513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970458509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RenderShadows: 1
+  m_RequiresDepthTextureOption: 2
+  m_RequiresOpaqueTextureOption: 2
+  m_CameraType: 0
+  m_Cameras: []
+  m_RendererIndex: -1
+  m_VolumeLayerMask:
+    serializedVersion: 2
+    m_Bits: 1
+  m_VolumeTrigger: {fileID: 0}
+  m_RenderPostProcessing: 0
+  m_Antialiasing: 0
+  m_AntialiasingQuality: 2
+  m_StopNaN: 0
+  m_Dithering: 0
+  m_ClearDepth: 1
+  m_AllowXRRendering: 1
+  m_RequiresDepthTexture: 0
+  m_RequiresColorTexture: 0
+  m_Version: 2
 --- !u!1 &1974055038
 GameObject:
   m_ObjectHideFlags: 0
@@ -6927,15 +6045,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
---- !u!21 &1978980499
+--- !u!21 &2047349167
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/RadialGradientShader
-  m_Shader: {fileID: 4800000, guid: 716dede5cf74ba64987ba43a28b6008e, type: 3}
+  m_Name: UI/LinearGradientShader
+  m_Shader: {fileID: 4800000, guid: e88da90ad3eabef428133c17bf37b086, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -6959,15 +6077,15 @@ Material:
     - _StencilWriteMask: 255
     m_Colors: []
   m_BuildTextureStacks: []
---- !u!21 &1997791632
+--- !u!21 &2060268075
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/LinearGradientShader
-  m_Shader: {fileID: 4800000, guid: c7393eefa72d298458e3e5b234c9cf48, type: 3}
+  m_Name: UI/DiamondGradientShader
+  m_Shader: {fileID: 4800000, guid: 73e8841348898754594c773946e3345c, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -7037,10 +6155,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2093188162}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29578933630697b42867238c21ed3bcf, type: 3}
+  m_Script: {fileID: 11500000, guid: f8c85731ecf51aa4bb67ee01c46534e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1100790735}
+  m_Material: {fileID: 412182891}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -7078,10 +6196,10 @@ MonoBehaviour:
     m_NumColorKeys: 3
     m_NumAlphaKeys: 2
   _GradientResolution: 256
-  _Angle: 45
+  _Angle: 180
   _Center: {x: 0.5, y: 0.5}
   _Radius1: 0.15
-  _Radius2: 1.22
+  _Radius2: 1.25
 --- !u!222 &2093188165
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7090,6 +6208,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2093188162}
   m_CullTransparentMesh: 0
+--- !u!21 &2095741963
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/AngularGradientShader
+  m_Shader: {fileID: 4800000, guid: be5c0cb54c2b78e4daf51754cbabfe87, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _ColorMask: 15
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors: []
+  m_BuildTextureStacks: []
 --- !u!1 &2096338773
 GameObject:
   m_ObjectHideFlags: 0
@@ -7136,10 +6286,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2096338773}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed6ab1426fd1fe8449d8f51179530cb2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9cee4ad3248ebdd4489eab058e166981, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 1244046395}
+  m_Material: {fileID: 1027778033}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -7186,15 +6336,15 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2096338773}
   m_CullTransparentMesh: 0
---- !u!21 &2126329645
+--- !u!21 &2108294879
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/LinearGradientShader
-  m_Shader: {fileID: 4800000, guid: c7393eefa72d298458e3e5b234c9cf48, type: 3}
+  m_Name: UI/RadialGradientShader
+  m_Shader: {fileID: 4800000, guid: 63de0033d21df034585262239a52daf1, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
