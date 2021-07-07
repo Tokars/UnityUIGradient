@@ -2,7 +2,7 @@
   "name": "com.tokar.ui.gradient",
   "displayName": "Figma Gradient",
   "description": "UI gradient component",
-  "version": "0.0.2-preview",
+  "version": "0.0.4-preview",
   "keywords": [
     "ui",
     "image",
