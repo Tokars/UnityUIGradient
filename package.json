@@ -1,8 +1,8 @@
 {
   "name": "com.tokar.ui.gradient",
-  "displayName": "Figma Gradient",
-  "description": "UI gradient component",
-  "version": "0.0.4-preview",
+  "displayName": "Unity UI Gradient",
+  "description": "Unity UI gradient components",
+  "version": "1.1",
   "keywords": [
     "ui",
     "image",
@@ -11,12 +11,12 @@
   "samples": [
     {
       "displayName": "Demo",
-      "description": "Description for sample 1",
+      "description": "Gradient samples",
       "path": "Samples"
     }
   ],
   "author": {
-    "name": "o_tokar",
+    "name": "Oleksandr Tokar",
     "email": "#",
     "url": "https://#"
   },
