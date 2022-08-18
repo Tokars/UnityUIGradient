@@ -2,7 +2,7 @@
   "name": "com.tokar.ui.gradient",
   "displayName": "Unity UI Gradients",
   "description": "Unity custom UI gradient components",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "keywords": [
     "ui",
     "image",
@@ -20,5 +20,6 @@
     "email": "#",
     "url": "https://#"
   },
-  "type": "tool"
+  "type": "library",
+  "unity": "2017.3"
 }
