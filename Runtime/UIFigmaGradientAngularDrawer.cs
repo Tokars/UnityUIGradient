@@ -41,7 +41,7 @@ namespace UIFigmaGradients
             for (int i = 0; i < vh.currentVertCount; i++)
             {
                 vh.PopulateUIVertex(ref vert, i);
-                vert.normal = new Vector3(_Center.x, 1 - _Center.y, _Angle);
+                vert.normal = new Vector3(_Center.x, 1 - _Center.y, angle);
                 vh.SetUIVertex(vert, i);
             }
         }
@@ -50,9 +50,9 @@ namespace UIFigmaGradients
         // [EditorButton]
         public void ProcessGradient()
         {
-            var colorKeys = _Gradient.colorKeys;
-            var alphaKeys = _Gradient.alphaKeys;
-            var lastColorKey = _Gradient.colorKeys[colorKeys.Length - 1];
+            var colorKeys = gradient.colorKeys;
+            var alphaKeys = gradient.alphaKeys;
+            var lastColorKey = gradient.colorKeys[colorKeys.Length - 1];
             if (lastColorKey.time < 1)
             {
                 var newColorKeys = new GradientColorKey[colorKeys.Length + 1];
@@ -71,8 +71,8 @@ namespace UIFigmaGradients
                 newAlphaKeys[newAlphaKeys.Length - 1] = alphaKeys[0];
                 newColorKeys[newColorKeys.Length - 1].time = 1;
                 newAlphaKeys[newAlphaKeys.Length - 1].time = 1;
-                _Gradient.colorKeys = newColorKeys;
-                _Gradient.alphaKeys = newAlphaKeys;
+                gradient.colorKeys = newColorKeys;
+                gradient.alphaKeys = newAlphaKeys;
                 OnValidate();
             }
         }

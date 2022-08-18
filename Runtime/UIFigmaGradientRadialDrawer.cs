@@ -16,7 +16,7 @@ namespace UIFigmaGradients
             for (int i = 0; i < vh.currentVertCount; i++)
             {
                 vh.PopulateUIVertex(ref vert, i);
-                vert.normal = new Vector3(_Radius1, _Radius2, _Angle);
+                vert.normal = new Vector3(_Radius1, _Radius2, angle);
                 vert.uv1 = new Vector2(_Center.x, 1 - _Center.y);
                 vh.SetUIVertex(vert, i);
             }

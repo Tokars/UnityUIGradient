@@ -8,14 +8,28 @@ namespace UIFigmaGradients
     [RequireComponent(typeof(CanvasRenderer))]
     public class UIFigmaGradientLinearDrawer : MaskableGraphic
     {
-        [SerializeField] protected Gradient _Gradient = new Gradient();
-        [SerializeField] private GradientResolution _GradientResolution = GradientResolution.k256;
-        [SerializeField] protected float _Angle = 180;
+        [SerializeField] protected Gradient gradient = new Gradient();
+        [SerializeField] private GradientResolution gradientResolution = GradientResolution.k256;
+        [SerializeField] protected float angle = 180;
 
-        private Texture2D _GradientTexture;
+        private Texture2D _gradientTexture;
         protected virtual TextureWrapMode WrapMode => TextureWrapMode.Clamp;
         protected virtual Material GradientMaterial => new Material(Shader.Find("UI/LinearGradientShader"));
-        public override Texture mainTexture => _GradientTexture;
+        public override Texture mainTexture => _gradientTexture;
+
+        public Gradient Gradient
+        {
+            get => gradient;
+            set => gradient = value;
+        }
+
+        public float Angle
+        {
+            get => angle;
+            set => angle = value;
+        }
+
+
 #if UNITY_EDITOR
         protected override void OnValidate()
         {
@@ -31,16 +45,16 @@ namespace UIFigmaGradients
 
         public Texture2D GenerateTexture(bool makeNoLongerReadable = false)
         {
-            Texture2D tex = new Texture2D(1, (int) _GradientResolution, TextureFormat.ARGB32, false, true);
+            Texture2D tex = new Texture2D(1, (int)gradientResolution, TextureFormat.ARGB32, false, true);
             tex.wrapMode = WrapMode;
             tex.filterMode = FilterMode.Bilinear;
             tex.anisoLevel = 1;
-            Color[] colors = new Color[(int) _GradientResolution];
-            float div = (float) (int) _GradientResolution;
-            for (int i = 0; i < (int) _GradientResolution; ++i)
+            Color[] colors = new Color[(int)gradientResolution];
+            float div = (float)(int)gradientResolution;
+            for (int i = 0; i < (int)gradientResolution; ++i)
             {
-                float t = (float) i / div;
-                colors[i] = _Gradient.Evaluate(t);
+                float t = (float)i / div;
+                colors[i] = gradient.Evaluate(t);
             }
 
             tex.SetPixels(colors);
@@ -51,21 +65,21 @@ namespace UIFigmaGradients
 
         public void Refresh()
         {
-            if (_GradientTexture != null)
+            if (_gradientTexture != null)
             {
-                DestroyImmediate(_GradientTexture);
+                DestroyImmediate(_gradientTexture);
             }
 
             material = GradientMaterial;
-            _GradientTexture = GenerateTexture();
+            _gradientTexture = GenerateTexture();
         }
 
         protected override void OnDestroy()
         {
             base.OnDestroy();
-            if (_GradientTexture != null)
+            if (_gradientTexture != null)
             {
-                DestroyImmediate(_GradientTexture);
+                DestroyImmediate(_gradientTexture);
             }
         }
 
@@ -75,7 +89,7 @@ namespace UIFigmaGradients
             for (int i = 0; i < vh.currentVertCount; i++)
             {
                 vh.PopulateUIVertex(ref vert, i);
-                vert.uv1 = new Vector2(_Angle, _Angle);
+                vert.uv1 = new Vector2(angle, angle);
                 vh.SetUIVertex(vert, i);
             }
         }
@@ -92,7 +106,7 @@ namespace UIFigmaGradients
         {
             var parameters = UIFigmaGradientTools.ParseLinearCssParams(css);
             var angle = parameters[0].Trim().Replace("deg", "");
-            _Angle = float.Parse(angle, NumberStyles.Any, CultureInfo.InvariantCulture);
+            this.angle = float.Parse(angle, NumberStyles.Any, CultureInfo.InvariantCulture);
             List<GradientColorKey> colorKeys = new List<GradientColorKey>();
             List<GradientAlphaKey> alphaKeys = new List<GradientAlphaKey>();
             for (int i = 1; i < parameters.Count; i++)
@@ -109,7 +123,7 @@ namespace UIFigmaGradients
                 alphaKeys.Add(alphaKey);
             }
 
-            _Gradient.SetKeys(colorKeys.ToArray(), alphaKeys.ToArray());
+            gradient.SetKeys(colorKeys.ToArray(), alphaKeys.ToArray());
             OnValidate();
         }
 #endif
