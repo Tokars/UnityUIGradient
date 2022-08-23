@@ -28,13 +28,13 @@ namespace UIFigmaGradients
             get => angle;
             set => angle = value;
         }
-
+#if UNITY_EDITOR
         protected override void OnValidate()
         {
             base.OnValidate();
             Refresh();
         }
-
+#endif
         protected override void Awake()
         {
             base.Awake();
@@ -120,7 +120,8 @@ namespace UIFigmaGradients
             }
 
             gradient.SetKeys(colorKeys.ToArray(), alphaKeys.ToArray());
-            OnValidate();
+            // OnValidate();
+            Refresh();
         }
     }
 }
