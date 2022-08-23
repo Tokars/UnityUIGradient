@@ -99,8 +99,6 @@ namespace UIFigmaGradients
             base.OnPopulateMesh(vh);
             GenerateHelperUvs(vh);
         }
-#if UNITY_EDITOR
-
 
         public virtual void ParseCss(string css)
         {
@@ -126,6 +124,5 @@ namespace UIFigmaGradients
             gradient.SetKeys(colorKeys.ToArray(), alphaKeys.ToArray());
             OnValidate();
         }
-#endif
     }
 }
