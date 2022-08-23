@@ -29,14 +29,12 @@ namespace UIFigmaGradients
             set => angle = value;
         }
 
-
-#if UNITY_EDITOR
         protected override void OnValidate()
         {
             base.OnValidate();
             Refresh();
         }
-#endif
+
         protected override void Awake()
         {
             base.Awake();
